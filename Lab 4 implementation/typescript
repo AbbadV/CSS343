@@ -1,0 +1,157 @@
+Script started on Fri 09 Mar 2012 09:29:14 PM PST
+]0;shane425@uw1-320-18:~/Desktop/proj4[shane425@uw1-320-18 proj4]$ g++ *.cpp
+]0;shane425@uw1-320-18:~/Desktop/proj4[shane425@uw1-320-18 proj4]$ valgrind ./a.out
+==18190== Memcheck, a memory error detector
+==18190== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==18190== Using Valgrind-3.5.0 and LibVEX; rerun with -h for copyright info
+==18190== Command: ./a.out
+==18190== 
+--------------------------------------------------------------
+Inventory for Many Overzealous Videos Ignite & Entertain
+--------------------------------------------------------------
+CLASSIC
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR  MO  ACTOR
+ 10  0 Holiday                George Cukor     1938  9   Cary Grant
+ 10  0 Holiday                George Cukor     1938  9   Katherine Hepburn
+ 10  0 Gone With the Wind     Victor Fleming   1939  2   Clark Gable
+ 10  0 The Wizard of Oz       Victor Fleming   1939  7   Judy Garland
+ 10  0 Gone With the Wind     Victor Fleming   1939  2   Vivien Leigh
+ 10  0 The Philadelphia Stor  George Cukor     1940  5   Cary Grant
+ 10  0 The Philadelphia Stor  George Cukor     1940  5   Katherine Hepburn
+ 10  0 The Maltese Falcon     John Huston      1941 10   Humphrey Bogart
+ 10  0 Casablanca             Michael Curtiz   1942  8   Humphrey Bogart
+ 10  0 Casablanca             Michael Curtiz   1942  8   Ingrid Bergman
+ 10  0 It's a Wonderful Life  Frank Capra      1946 11   Donna Reed
+ 10  0 It's a Wonderful Life  Frank Capra      1946 11   James Steward
+ 10  0 A Clockwork Orange     Stanley Kubrick  1971  2   Malcolm McDowell
+ 10  0 Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+
+DRAMA
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR
+ 10  0 Good Morning Vietnam   Barry Levinson   1988 
+ 10  0 Unforgiven             Clint Eastwood   1992 
+ 10  0 Good Will Hunting      Gus Van Sant     2000 
+ 10  0 Silence of the Lambs   Jonathan Demme   1991 
+ 10  0 Dogfight               Nancy Savoca     1991 
+ 10  0 King of Hearts         Phillippe De Br  1967 
+ 10  0 Schindler's List       Steven Spielber  1993 
+
+COMEDY
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR
+ 10  0 Annie Hall             Woody Allen      1977 
+ 10  0 Fargo                  Joel Coen        1996 
+ 10  0 National Lampoon's An  John Landis      1978 
+ 10  0 Pirates of the Caribb  Gore Verbinski   2003 
+ 10  0 Sleepless in Seattle   Nora Ephron      1993 
+ 10  0 When Harry Met Sally   Rob Reiner       1989 
+ 10  0 You've Got Mail        Nora Ephron      1998 
+
+   *** Customer ID = 1000 Mouse Minnie
+No Customer History
+
+   *** Customer ID = 5000 Frog Freddie
+No Customer History
+
+   *** Customer ID = 8000 Wacky Wally
+No Customer History
+
+ERROR: Genre: Z not found
+ERROR: Action Code: X not found
+ERROR: Action Code: Z not found
+ERROR: Customer ID: 1234 not found
+ERROR: Invalid Movie Bogus Title
+ERROR: Invalid Media Code: Z
+ERROR: Invalid Movie Bogus Title
+--------------------------------------------------------------
+Inventory for Many Overzealous Videos Ignite & Entertain
+--------------------------------------------------------------
+CLASSIC
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR  MO  ACTOR
+  9  1 Holiday                George Cukor     1938  9   Cary Grant
+ 10  0 Holiday                George Cukor     1938  9   Katherine Hepburn
+ 10  0 Gone With the Wind     Victor Fleming   1939  2   Clark Gable
+ 10  0 The Wizard of Oz       Victor Fleming   1939  7   Judy Garland
+ 10  0 Gone With the Wind     Victor Fleming   1939  2   Vivien Leigh
+  9  1 The Philadelphia Stor  George Cukor     1940  5   Cary Grant
+  9  1 The Philadelphia Stor  George Cukor     1940  5   Katherine Hepburn
+  9  1 The Maltese Falcon     John Huston      1941 10   Humphrey Bogart
+ 10  0 Casablanca             Michael Curtiz   1942  8   Humphrey Bogart
+ 10  0 Casablanca             Michael Curtiz   1942  8   Ingrid Bergman
+ 10  0 It's a Wonderful Life  Frank Capra      1946 11   Donna Reed
+ 10  0 It's a Wonderful Life  Frank Capra      1946 11   James Steward
+  9  1 A Clockwork Orange     Stanley Kubrick  1971  2   Malcolm McDowell
+  0 10 Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+
+DRAMA
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR
+  9  1 Good Morning Vietnam   Barry Levinson   1988 
+  9  1 Unforgiven             Clint Eastwood   1992 
+  9  1 Good Will Hunting      Gus Van Sant     2000 
+  9  1 Silence of the Lambs   Jonathan Demme   1991 
+  8  2 Dogfight               Nancy Savoca     1991 
+  9  1 King of Hearts         Phillippe De Br  1967 
+  9  1 Schindler's List       Steven Spielber  1993 
+
+COMEDY
+*IN* *OUT*
+DVD    DVD TITLE              DIRECTOR         YEAR
+  9  1 Annie Hall             Woody Allen      1977 
+  9  1 Fargo                  Joel Coen        1996 
+  9  1 National Lampoon's An  John Landis      1978 
+ 10  0 Pirates of the Caribb  Gore Verbinski   2003 
+  9  1 Sleepless in Seattle   Nora Ephron      1993 
+  9  1 When Harry Met Sally   Rob Reiner       1989 
+  9  1 You've Got Mail        Nora Ephron      1998 
+
+   *** Customer ID = 1000 Mouse Minnie
+DVD Borrow Good Morning Vietnam   Barry Levinson   1988 
+DVD Borrow The Philadelphia Stor  George Cukor     1940  5   Katherine Hepburn
+DVD Borrow Good Will Hunting      Gus Van Sant     2000 
+DVD Borrow The Philadelphia Stor  George Cukor     1940  5   Cary Grant
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+
+   *** Customer ID = 1111 Mouse Mickey
+DVD Borrow A Clockwork Orange     Stanley Kubrick  1971  2   Malcolm McDowell
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Borrow The Maltese Falcon     John Huston      1941 10   Humphrey Bogart
+DVD Borrow Holiday                George Cukor     1938  9   Cary Grant
+
+   *** Customer ID = 5000 Frog Freddie
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Return Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Return Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Return Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+
+   *** Customer ID = 8000 Wacky Wally
+DVD Borrow You've Got Mail        Nora Ephron      1998 
+DVD Return You've Got Mail        Nora Ephron      1998 
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+DVD Borrow National Lampoon's An  John Landis      1978 
+
+   *** Customer ID = 8888 Pig Porky
+DVD Borrow Annie Hall             Woody Allen      1977 
+DVD Borrow When Harry Met Sally   Rob Reiner       1989 
+DVD Borrow Silence of the Lambs   Jonathan Demme   1991 
+DVD Borrow Dogfight               Nancy Savoca     1991 
+DVD Borrow Harold and Maude       Hal Ashby        1971  3   Ruth Gordon
+
+==18190== 
+==18190== HEAP SUMMARY:
+==18190==     in use at exit: 0 bytes in 0 blocks
+==18190==   total heap usage: 10,678 allocs, 10,678 frees, 1,643,604 bytes allocated
+==18190== 
+==18190== All heap blocks were freed -- no leaks are possible
+==18190== 
+==18190== For counts of detected and suppressed errors, rerun with: -v
+==18190== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 15 from 8)
+]0;shane425@uw1-320-18:~/Desktop/proj4[shane425@uw1-320-18 proj4]$ exit
+
+Script done on Fri 09 Mar 2012 09:29:42 PM PST

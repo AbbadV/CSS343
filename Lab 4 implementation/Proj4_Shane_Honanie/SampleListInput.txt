@@ -1,0 +1,70 @@
+/*--------------------------------*- C++ -*------------------------------------*\
+| O pen         | OpenSea:  The Open Source Seakeeping Suite                    |
+| S eakeeping   | Version:  1.0                                                 |
+| E valuation   | Web:      www.opensea.dmsonline.us                            |
+| A nalysis     |                                                               |
+\*-----------------------------------------------------------------------------*/
+seafile
+{
+    version     1.0;
+    format      ascii;
+    object      dictionary;
+}
+
+//-------------Sequential Example
+
+identifier{
+key(
+val1
+val2
+val3
+val4
+);
+}
+
+//-------------Sequential Example 2
+
+identifier{
+key1(
+val1
+val2
+val3
+val4
+);
+
+key2(
+val1
+val2
+val3
+val4
+);
+}
+
+
+//-------------Direct Example 1
+
+identifier{
+key(
+0:val2
+5:val3
+22:val4
+);
+}
+
+//-------------Direct Example 2
+
+identifier2{
+key1(
+0:val2
+5:val3
+22:val4
+);
+
+key2(
+6:val2
+13:val3
+15:val4
+);
+}
+
+// ************************************************************************* //
